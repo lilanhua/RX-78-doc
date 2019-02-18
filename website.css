@@ -37,5 +37,5 @@ section {
 }
 
 table>thead>tr>th:first-child {
-  width: 0;
+  width: 5em;
 }

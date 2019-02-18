@@ -6,9 +6,9 @@
 
 | 参数                            | 注释                                                         |
 | ------------------------------- | ------------------------------------------------------------ |
-| device_id<small>设备ID</small>  | 形如 XXXX-XXXX-XXXX，包括横杠，不包括方括号，字母全部为大写 |
-| vendor_id<small>厂商ID</small>  | 默认值为 0x1979，可自行配置                                  |
-| product_id<small>产品ID</small> | 默认值为 0x0407，可自行配置                                  |
+| device_id<small>设备ID</small>  | 形如 XXXX-XXXX-XXXX，包括横杠，不包括方括号，字母全部为大写。 |
+| vendor_id<small>厂商ID</small>  | 默认值为 0x1979，可自行配置。                                  |
+| product_id<small>产品ID</small> | 默认值为 0x0407，可自行配置。                                  |
 
 ## RX78::Device::Close <small>RX78设备.关闭</small>
 对象销毁时会自动调用此方法关闭设备。
