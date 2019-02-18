@@ -25,9 +25,17 @@ h2>small:before {
 }
 
 section>*:not(h1):not(h2) {
-  margin-left: 20pt
+  margin-left: 20pt;
+}
+
+section {
+  margin-bottom: 8em;
 }
 
 .markdown-section table {
-  width: inherit !important;
+  width: calc(100% - 20pt) !important;
+}
+
+table>thead>tr>th:first-child {
+  width: 0;
 }
