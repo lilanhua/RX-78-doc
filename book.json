@@ -1,3 +1,7 @@
 {
+  "language" : "zh-hans",
+  "styles": {
+    "website": "website.css"
+  },
   "plugins": ["-lunr", "-search", "search-plus"]
 }
