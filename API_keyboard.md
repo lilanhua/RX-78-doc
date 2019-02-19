@@ -8,8 +8,8 @@
 | 参数                           | 注释       |
 | ------------------------------ | ---------- |
 | virtual_key_code<small>虚拟键码</small> | 要按下弹起的键的虚拟键码。 |
-| sleep_after_down_range<small>按下后延时范围</small> | 按下键盘后随机延迟的范围，默认为 { 50, 80 }，即大于等于 50ms，小于等于 80 ms |
-| sleep_after_down_range<small>按下后延时范围</small> | 弹起键盘后随机延迟的范围，默认为 { 150, 600 }，即大于等于 150ms，小于等于 600 ms |
+| sleep_after_down_range<small>按下后延时范围</small> | 按下键盘后随机延迟的范围，默认为 { 50, 80 }，即大于等于 50 ms，小于等于 80 ms。 |
+| sleep_after_down_range<small>按下后延时范围</small> | 弹起键盘后随机延迟的范围，默认为 { 150, 600 }，即大于等于 150 ms，小于等于 600 ms。 |
 
 ## RX78::Device::Keydown<small>RX78设备.按下</small>
 | 参数                                    | 注释                   |
