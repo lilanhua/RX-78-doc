@@ -10,4 +10,4 @@
   * [其他 API](API_others.md)
   * [结果代码](API_result.md)
   * [按键代码](API_keycode.md)
-* [常见问题](API.md)
+* [常见问题](QNA.md)

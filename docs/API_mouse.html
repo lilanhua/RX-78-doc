@@ -1,0 +1,649 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>鼠标 API · RX-78 说明书</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="API_others.html" />
+    
+    
+    <link rel="prev" href="API_keyboard.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="API.html">
+            
+                <a href="API.html">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="API_control.html">
+            
+                <a href="API_control.html">
+            
+                    
+                    控制 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="API_config.html">
+            
+                <a href="API_config.html">
+            
+                    
+                    配置 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="API_verify.html">
+            
+                <a href="API_verify.html">
+            
+                    
+                    验证 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="API_keyboard.html">
+            
+                <a href="API_keyboard.html">
+            
+                    
+                    键盘 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.5" data-path="API_mouse.html">
+            
+                <a href="API_mouse.html">
+            
+                    
+                    鼠标 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="API_others.html">
+            
+                <a href="API_others.html">
+            
+                    
+                    其他 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="API_result.html">
+            
+                <a href="API_result.html">
+            
+                    
+                    结果代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="API_keycode.html">
+            
+                <a href="API_keycode.html">
+            
+                    
+                    按键代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="QNA.html">
+            
+                <a href="QNA.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >鼠标 API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9F20;&#x6807;-api">&#x9F20;&#x6807; API</h1>
+<h2 id="rx78deviceleftdownrx78&#x8BBE;&#x5907;&#x5DE6;&#x952E;&#x6309;&#x4E0B;">RX78::Device::LeftDown<small>RX78&#x8BBE;&#x5907;.&#x5DE6;&#x952E;&#x6309;&#x4E0B;</small></h2>
+<h2 id="rx78deviceleftuprx78&#x8BBE;&#x5907;&#x5DE6;&#x952E;&#x5F39;&#x8D77;">RX78::Device::LeftUp<small>RX78&#x8BBE;&#x5907;.&#x5DE6;&#x952E;&#x5F39;&#x8D77;</small></h2>
+<h2 id="rx78deviceleftclickrx78&#x8BBE;&#x5907;&#x5DE6;&#x952E;&#x5355;&#x51FB;">RX78::Device::LeftClick<small>RX78&#x8BBE;&#x5907;.&#x5DE6;&#x952E;&#x5355;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_down_range<small>&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_up_range<small>&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78deviceleftdoubleclickrx78&#x8BBE;&#x5907;&#x5DE6;&#x952E;&#x53CC;&#x51FB;">RX78::Device::LeftDoubleClick<small>RX78&#x8BBE;&#x5907;.&#x5DE6;&#x952E;&#x53CC;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_first_down_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_first_up_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 60, 110 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 60 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 110 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_down_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_up_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicerightdownrx78&#x8BBE;&#x5907;&#x53F3;&#x952E;&#x6309;&#x4E0B;">RX78::Device::RightDown<small>RX78&#x8BBE;&#x5907;.&#x53F3;&#x952E;&#x6309;&#x4E0B;</small></h2>
+<h2 id="rx78devicerightuprx78&#x8BBE;&#x5907;&#x53F3;&#x952E;&#x5F39;&#x8D77;">RX78::Device::RightUp<small>RX78&#x8BBE;&#x5907;.&#x53F3;&#x952E;&#x5F39;&#x8D77;</small></h2>
+<h2 id="rx78devicerightclickrx78&#x8BBE;&#x5907;&#x53F3;&#x952E;&#x5355;&#x51FB;">RX78::Device::RightClick<small>RX78&#x8BBE;&#x5907;.&#x53F3;&#x952E;&#x5355;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_down_range<small>&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_up_range<small>&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicerightdoubleclickrx78&#x8BBE;&#x5907;&#x53F3;&#x952E;&#x53CC;&#x51FB;">RX78::Device::RightDoubleClick<small>RX78&#x8BBE;&#x5907;.&#x53F3;&#x952E;&#x53CC;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_first_down_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_first_up_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 60, 110 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 60 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 110 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_down_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_up_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicemiddledownrx78&#x8BBE;&#x5907;&#x4E2D;&#x952E;&#x6309;&#x4E0B;">RX78::Device::MiddleDown<small>RX78&#x8BBE;&#x5907;.&#x4E2D;&#x952E;&#x6309;&#x4E0B;</small></h2>
+<h2 id="rx78devicemiddleuprx78&#x8BBE;&#x5907;&#x4E2D;&#x952E;&#x5F39;&#x8D77;">RX78::Device::MiddleUp<small>RX78&#x8BBE;&#x5907;.&#x4E2D;&#x952E;&#x5F39;&#x8D77;</small></h2>
+<h2 id="rx78devicemiddleclickrx78&#x8BBE;&#x5907;&#x4E2D;&#x952E;&#x5355;&#x51FB;">RX78::Device::MiddleClick<small>RX78&#x8BBE;&#x5907;.&#x4E2D;&#x952E;&#x5355;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_down_range<small>&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_up_range<small>&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicemiddledoubleclickrx78&#x8BBE;&#x5907;&#x4E2D;&#x952E;&#x53CC;&#x51FB;">RX78::Device::MiddleDoubleClick<small>RX78&#x8BBE;&#x5907;.&#x4E2D;&#x952E;&#x53CC;&#x51FB;</small></h2>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sleep_after_first_down_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_first_up_range<small>&#x7B2C;&#x4E00;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 60, 110 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 60 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 110 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_down_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x6309;&#x4E0B;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 50, 80 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 50 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 80 ms&#x3002;</td>
+</tr>
+<tr>
+<td>sleep_after_second_up_range<small>&#x7B2C;&#x4E8C;&#x6B21;&#x5F39;&#x8D77;&#x540E;&#x5EF6;&#x8FDF;&#x8303;&#x56F4;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 500, 900 }&#xFF0C;&#x5373;&#x5927;&#x4E8E;&#x7B49;&#x4E8E; 500 ms&#xFF0C;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E; 900 ms&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicereleaseallbuttonrx78&#x8BBE;&#x5907;&#x91CA;&#x653E;&#x6240;&#x6709;&#x9F20;&#x6807;&#x6309;&#x952E;">RX78::Device::ReleaseAllButton<small>RX78&#x8BBE;&#x5907;.&#x91CA;&#x653E;&#x6240;&#x6709;&#x9F20;&#x6807;&#x6309;&#x952E;</small></h2>
+<p>&#x5728;&#x51FA;&#x73B0;&#x9F20;&#x6807;&#x6309;&#x952E;&#x51FA;&#x73B0;&#x5F02;&#x5E38;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x6062;&#x590D;&#x3002;</p>
+<h2 id="rx78devicescrollrx78&#x8BBE;&#x5907;&#x6EDA;&#x52A8;">RX78::Device::Scroll<small>RX78&#x8BBE;&#x5907;.&#x6EDA;&#x52A8;</small></h2>
+<p>&#x6EDA;&#x52A8;&#x9F20;&#x6807;&#x6EDA;&#x8F6E;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>value<small>&#x503C;</small></td>
+<td>&#x5411;&#x4E0A;&#x4E3A;&#x6B63;&#xFF0C;&#x5411;&#x4E0B;&#x4E3A;&#x8D1F;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicetorelrx78&#x8BBE;&#x5907;&#x5230;&#x76F8;&#x5BF9;&#x5750;&#x6807;">RX78::Device::ToRel<small>RX78&#x8BBE;&#x5907;.&#x5230;&#x76F8;&#x5BF9;&#x5750;&#x6807;</small></h2>
+<p>&#x5C06;&#x5149;&#x6807;&#x5230;&#x7F6E;&#x4E8E;&#x5F53;&#x524D;&#x5750;&#x6807;&#x7684;&#x4F4D;&#x7F6E; (x, y) &#x5904;&#xFF0C;&#x65E0;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>x &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicetoabsrx78&#x8BBE;&#x5907;&#x5230;&#x7EDD;&#x5BF9;&#x5750;&#x6807;">RX78::Device::ToAbs<small>RX78&#x8BBE;&#x5907;.&#x5230;&#x7EDD;&#x5BF9;&#x5750;&#x6807;</small></h2>
+<p>&#x5C06;&#x5149;&#x6807;&#x7F6E;&#x4E8E;&#x76F8;&#x5BF9;&#x4E8E;&#x5750;&#x6807; (0, 0) &#x7684;&#x4F4D;&#x7F6E; (x, y) &#x5904;&#xFF0C;&#x65E0;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x3002;&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x524D;&#x9700;&#x8981;&#x5148;<a href="">&#x8BBE;&#x7F6E;&#x76EE;&#x6807;&#x673A;&#x5668;&#x5206;&#x8FA8;&#x7387;</a>&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>x &#x5750;&#x6807;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>y &#x5750;&#x6807;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicemoverx78&#x8BBE;&#x5907;&#x79FB;&#x52A8;">RX78::Device::Move<small>RX78&#x8BBE;&#x5907;.&#x79FB;&#x52A8;</small></h2>
+<p>&#x4F7F;&#x7528;&#x6570;&#x5B66;&#x65B9;&#x7A0B;&#x6A21;&#x62DF;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x3002;&#x6B64;&#x65B9;&#x6CD5;&#x4E3A;&#x76F8;&#x5BF9;&#x79FB;&#x52A8;&#x3002;</p>
+<p>&#x8F68;&#x8FF9;&#x8BA1;&#x7B97;&#x65B9;&#x7A0B;&#x4E3A; <code>a1 sin(b1 v) + a2 sin(b2 v)</code>&#xFF0C;v &#x8868;&#x793A;&#x5149;&#x6807;&#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x79FB;&#x52A8;&#x91CF;&#x3002;&#x901F;&#x5EA6;&#x7531;&#x4E09;&#x6B21;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>x &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>a1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 1, 2 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [1, 2)&#x3002;</td>
+</tr>
+<tr>
+<td>b1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.04 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.04)&#x3002;</td>
+</tr>
+<tr>
+<td>a2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.5, 1.5 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.5, 1.5)&#x3002;</td>
+</tr>
+<tr>
+<td>b2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.06 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.06)&#x3002;</td>
+</tr>
+<tr>
+<td>p1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+<tr>
+<td>p2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+<tr>
+<td>sample<small>&#x91C7;&#x6837;&#x7CFB;&#x6570;</small></td>
+<td>&#x6B64;&#x7CFB;&#x6570; * &#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x8DDD;&#x79BB; = &#x7528;&#x51E0;&#x4E2A;&#x70B9;&#x6A21;&#x62DF;&#x8F68;&#x8FF9;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0.2</td>
+</tr>
+<tr>
+<td>sleep</td>
+<td>&#x6BCF;&#x4E2A;&#x6A21;&#x62DF;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 10</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicetracerx78&#x8BBE;&#x5907;&#x6CBF;&#x8F68;&#x8FF9;&#x79FB;&#x52A8;">RX78::Device::Trace<small>RX78&#x8BBE;&#x5907;.&#x6CBF;&#x8F68;&#x8FF9;&#x79FB;&#x52A8;</small></h2>
+<p>&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x8F68;&#x8FF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x79FB;&#x52A8;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x4E3A;&#x76F8;&#x5BF9;&#x79FB;&#x52A8;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>&#x8F68;&#x8FF9;&#x6570;&#x636E;&#xFF0C;&#x6613;&#x8BED;&#x8A00;&#x4F20;&#x9012;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;&#xFF0C;VC++ &#x4F20;&#x9012; vector&lt;RX78::Offset&gt;&#xFF0C;&#x5982;&#xFF1A;<br>&#xA0;&#xA0;&#xA0;&#xA0;{ {0, 1}, {1, 3}, {2, 3} }</td>
+</tr>
+<tr>
+<td>sleep</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicetrace">RX78::Device::Trace</h2>
+<p>&#x91CD;&#x8F7D;&#x7248;&#x672C;&#x3002;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x8F68;&#x8FF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x79FB;&#x52A8;&#xFF0C;&#x6B64;&#x65B9;&#x6CD5;&#x4E3A;&#x76F8;&#x5BF9;&#x79FB;&#x52A8;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>&#x8F68;&#x8FF9;&#x6570;&#x636E;&#xFF0C;VC++ &#x4F20;&#x9012; short[][2]&#xFF0C;&#x5982;&#xFF1A;<br>&#xA0;&#xA0;&#xA0;&#xA0;{ {0, 1}, {1, 3}, {2, 3} }</td>
+</tr>
+<tr>
+<td>size</td>
+<td>&#x8F68;&#x8FF9;&#x6570;&#x636E;&#x5927;&#x5C0F;&#xFF0C;&#x5982;&#xFF1A;{ {0, 1}, {1, 3}, {2, 3} }&#xFF0C;&#x5927;&#x5C0F;&#x4E3A; 3</td>
+</tr>
+<tr>
+<td>sleep</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+</tbody>
+</table>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="API_keyboard.html" class="navigation navigation-prev " aria-label="Previous page: 键盘 API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="API_others.html" class="navigation navigation-next " aria-label="Next page: 其他 API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"鼠标 API","level":"1.2.5","depth":2,"next":{"title":"其他 API","level":"1.2.6","depth":2,"path":"API_others.md","ref":"API_others.md","articles":[]},"previous":{"title":"键盘 API","level":"1.2.4","depth":2,"path":"API_keyboard.md","ref":"API_keyboard.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"website.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RX-78 说明书","language":"zh-hans","gitbook":"*"},"file":{"path":"API_mouse.md","mtime":"2019-02-19T05:32:24.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-19T08:28:44.161Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
