@@ -40,3 +40,8 @@ section {
 table>thead>tr>th:first-child {
   width: 8em;
 }
+
+iframe {
+  width: calc(100% - 20pt);
+  height: 500px;
+}
