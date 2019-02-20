@@ -17,3 +17,12 @@
 | ----- | -------- |
 | value | 超时数值 |
 
+## RX78::GetSystemError <small>RX78设备.取系统错误</small>
+一般在 windows API 失败后应用 GetLastError 取错误代码，但易语言等内部函数会导致最后的错误代码发生改变，所以接口库会在 API 错误后将错误代码保存，而后用此 API 取出。
+
+## RX78::ResultToStr <small>RX78结果转字符串</small>
+将返回结果代码转为字符串
+
+| 参数  | 注释     |
+| ----- | -------- |
+| result | 结果    |
