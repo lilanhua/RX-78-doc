@@ -30,6 +30,15 @@ h2>small:before {
   color: #666666;
 }
 
+a>small {
+  font-size: 75% !important;
+}
+
+a>small:before {
+  content:" [易] ";
+}
+
+
 section>*:not(h1):not(h2) {
   margin-left: 20pt;
 }
