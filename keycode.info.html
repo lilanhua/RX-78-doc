@@ -39,7 +39,11 @@
 <script>
   var const_name_cpp = document.getElementById("keycode-info-cpp");
   var const_name_e = document.getElementById("keycode-info-e");
-  document.addEventListener('keydown', function(e) { e.preventDefault(); });
+  document.addEventListener('keydown', function(e) {
+    e.preventDefault();
+    const_name_cpp.textContent = "k" + e.code;
+    const_name_e.textContent = "#Vk" + e.code;
+  });
   document.addEventListener('keyup', function (e) {
     const_name_cpp.textContent = "k" + e.code;
     const_name_e.textContent = "#Vk" + e.code;
