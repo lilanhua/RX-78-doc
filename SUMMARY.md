@@ -11,3 +11,4 @@
   * [结果代码](API_result.md)
   * [按键代码](API_keycode.md)
 * [常见问题](QNA.md)
+* [版权声明](license.md)
