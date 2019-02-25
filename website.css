@@ -57,30 +57,4 @@ table>thead>tr>th:first-child {
 
 iframe {
   width: calc(100% - 20pt);
-  height: 500px;
-}
-
-#keycode-info
-{
-  border: 1px solid;
-  padding: 15px;
-}
-
-#keycode-info-tip
-{
-  font-size: 1.5em;
-  text-align: center;
-  display: block;
-}
-
-#keycode-info-cpp
-{
-  text-align: center;
-  display: block;
-}
-
-#keycode-info-e
-{
-  text-align: center;
-  display: block;
 }
