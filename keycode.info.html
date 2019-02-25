@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="keycode.js"></script>
   <style>
     #keycode-info-tip {
       font-size: 1.5em;
@@ -35,9 +34,16 @@
     <span id="keycode-info-tip">请按下任意按键</span>
     <span id="keycode-info-cpp"></span>
     <span id="keycode-info-e"></span>
-
-    <script src="keycode.js"></script>
   </div>
 </body>
+<script>
+  var const_name_cpp = document.getElementById("keycode-info-cpp");
+  var const_name_e = document.getElementById("keycode-info-e");
+  document.addEventListener('keydown', function(e) { e.preventDefault(); });
+  document.addEventListener('keyup', function (e) {
+    const_name_cpp.textContent = "k" + e.code;
+    const_name_e.textContent = "#Vk" + e.code;
+  });
+</script>
 
 </html>
