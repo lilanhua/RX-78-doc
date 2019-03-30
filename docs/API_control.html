@@ -304,12 +304,20 @@
 <td>&#x5F62;&#x5982; XXXX-XXXX-XXXX&#xFF0C;&#x5305;&#x62EC;&#x6A2A;&#x6760;&#xFF0C;&#x4E0D;&#x5305;&#x62EC;&#x65B9;&#x62EC;&#x53F7;&#xFF0C;&#x5B57;&#x6BCD;&#x5168;&#x90E8;&#x4E3A;&#x5927;&#x5199;&#x3002;</td>
 </tr>
 <tr>
-<td>vendor_ID<small>&#x5382;&#x5546;ID</small></td>
-<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 0x1979&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x914D;&#x7F6E;&#x3002;</td>
+<td>target_resolution_x<small>&#x76EE;&#x6807;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x5F53;&#x524D;&#x5C4F;&#x5E55;&#x5BBD;&#x5EA6;&#x3002;</td>
 </tr>
 <tr>
-<td>product_ID<small>&#x4EA7;&#x54C1;ID</small></td>
-<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; 0x0407&#xFF0C;&#x53EF;&#x81EA;&#x884C;&#x914D;&#x7F6E;&#x3002;</td>
+<td>target_resolution_y<small>&#x76EE;&#x6807;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;</small></td>
+<td>&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;&#x5F53;&#x524D;&#x5C4F;&#x5E55;&#x9AD8;&#x5EA6;&#x3002;</td>
+</tr>
+<tr>
+<td>device_type <small>&#x4EA7;&#x54C1;ID</small></td>
+<td>&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#x786C;&#x4EF6;&#xFF0C;&#x65B0;&#x7248;&#x672C;&#x4E0D;&#x586B;&#x3002;&#x53EF;&#x9009;&#x503C;&#x4E3A;&#xFF1A; DeviceType::k1 <small>&#x8BBE;&#x5907;&#x7C7B;&#x578B;_1&#x5934;</small>&#xFF08;1 &#x5934;&#xFF09;&#x3001;DeviceType::k2 <small>&#x8BBE;&#x5907;&#x7C7B;&#x578B;_2&#x5934;</small>&#xFF08;2 &#x5934;&#xFF09;&#x3001;DeviceType::k3 <small>&#x8BBE;&#x5907;&#x7C7B;&#x578B;_3&#x5934;</small>&#xFF08;3 &#x5934;&#xFF09;&#x3002;</td>
+</tr>
+<tr>
+<td>mouse_mode <small>&#x4EA7;&#x54C1;ID</small></td>
+<td>&#x517C;&#x5BB9;&#x65E7;&#x7248;&#x672C;&#x786C;&#x4EF6;&#xFF0C;&#x65B0;&#x7248;&#x672C;&#x4E0D;&#x586B;&#x3002;&#x53EF;&#x9009;&#x503C;&#x4E3A;&#xFF1A;MouseMode::kRelative <small>&#x9F20;&#x6807;&#x6A21;&#x5F0F;_&#x76F8;&#x5BF9;</small>&#xFF08;3 &#x5934;&#xFF09;&#x3001;MouseMode::kBoth <small>&#x9F20;&#x6807;&#x6A21;&#x5F0F;_&#x76F8;&#x5BF9;&#x548C;&#x7EDD;&#x5BF9;</small>&#xFF08;1 &#x5934;&#x3001;2 &#x5934;&#xFF09;&#x3002;</td>
 </tr>
 </tbody>
 </table>
@@ -318,6 +326,14 @@
 <h2 id="rx78devicerestart-rx78&#x8BBE;&#x5907;&#x91CD;&#x542F;">RX78::Device::Restart <small>RX78&#x8BBE;&#x5907;.&#x91CD;&#x542F;</small></h2>
 <p>&#x53EF;&#x5728;&#x914D;&#x7F6E;&#x8BBE;&#x5907;ID&#x3001;&#x5382;&#x5546;ID&#x3001;&#x4EA7;&#x54C1;ID&#x540E;&#x91CD;&#x542F;&#x8BBE;&#x5907;&#xFF0C;&#x4EE5;&#x5237;&#x65B0;&#x4FE1;&#x606F;&#x3002;</p>
 <p>&#x6210;&#x529F;&#x540E;&#x5185;&#x90E8;&#x4F1A;&#x8C03;&#x7528; Close&#x3002;</p>
+<h2 id="rx78devicerestartmouse-rx78&#x8BBE;&#x5907;&#x91CD;&#x542F;&#x9F20;&#x6807;">RX78::Device::RestartMouse <small>RX78&#x8BBE;&#x5907;.&#x91CD;&#x542F;&#x9F20;&#x6807;</small></h2>
+<p>&#x53EA;&#x6709; 3 &#x5934;&#x8BBE;&#x5907;&#x6709;&#x6548;&#x3002;</p>
+<h2 id="rx78devicerestartkeyboard-rx78&#x8BBE;&#x5907;&#x91CD;&#x542F;&#x952E;&#x76D8;">RX78::Device::RestartKeyboard <small>RX78&#x8BBE;&#x5907;.&#x91CD;&#x542F;&#x952E;&#x76D8;</small></h2>
+<p>&#x53EA;&#x6709; 3 &#x5934;&#x8BBE;&#x5907;&#x6709;&#x6548;&#x3002;</p>
+<h2 id="rx78devicerestartmaster-rx78&#x8BBE;&#x5907;&#x91CD;&#x542F;&#x63A7;&#x5236;&#x7AEF;">RX78::Device::RestartMaster <small>RX78&#x8BBE;&#x5907;.&#x91CD;&#x542F;&#x63A7;&#x5236;&#x7AEF;</small></h2>
+<p>&#x53EA;&#x6709; 2 &#x5934;&#x6216; 3 &#x5934;&#x8BBE;&#x5907;&#x6709;&#x6548;&#x3002;</p>
+<h2 id="rx78devicerestartworker-rx78&#x8BBE;&#x5907;&#x91CD;&#x542F;&#x88AB;&#x63A7;&#x7AEF;">RX78::Device::RestartWorker <small>RX78&#x8BBE;&#x5907;.&#x91CD;&#x542F;&#x88AB;&#x63A7;&#x7AEF;</small></h2>
+<p>&#x53EA;&#x6709; 2 &#x5934;&#x6216; 3 &#x5934;&#x8BBE;&#x5907;&#x6709;&#x6548;&#x3002;</p>
 
                                 
                                 </section>
@@ -361,7 +377,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"控制 API","level":"1.2.1","depth":2,"next":{"title":"配置 API","level":"1.2.2","depth":2,"path":"API_config.md","ref":"API_config.md","articles":[]},"previous":{"title":"API","level":"1.2","depth":1,"path":"API.md","ref":"API.md","articles":[{"title":"控制 API","level":"1.2.1","depth":2,"path":"API_control.md","ref":"API_control.md","articles":[]},{"title":"配置 API","level":"1.2.2","depth":2,"path":"API_config.md","ref":"API_config.md","articles":[]},{"title":"验证 API","level":"1.2.3","depth":2,"path":"API_verify.md","ref":"API_verify.md","articles":[]},{"title":"键盘 API","level":"1.2.4","depth":2,"path":"API_keyboard.md","ref":"API_keyboard.md","articles":[]},{"title":"鼠标 API","level":"1.2.5","depth":2,"path":"API_mouse.md","ref":"API_mouse.md","articles":[]},{"title":"其他 API","level":"1.2.6","depth":2,"path":"API_others.md","ref":"API_others.md","articles":[]},{"title":"结果代码","level":"1.2.7","depth":2,"path":"API_result.md","ref":"API_result.md","articles":[]},{"title":"按键代码","level":"1.2.8","depth":2,"path":"API_keycode.md","ref":"API_keycode.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"website.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RX-78 说明书","language":"zh-hans","gitbook":"*"},"file":{"path":"API_control.md","mtime":"2019-02-22T09:12:01.366Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-14T09:18:27.241Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"控制 API","level":"1.2.1","depth":2,"next":{"title":"配置 API","level":"1.2.2","depth":2,"path":"API_config.md","ref":"API_config.md","articles":[]},"previous":{"title":"API","level":"1.2","depth":1,"path":"API.md","ref":"API.md","articles":[{"title":"控制 API","level":"1.2.1","depth":2,"path":"API_control.md","ref":"API_control.md","articles":[]},{"title":"配置 API","level":"1.2.2","depth":2,"path":"API_config.md","ref":"API_config.md","articles":[]},{"title":"验证 API","level":"1.2.3","depth":2,"path":"API_verify.md","ref":"API_verify.md","articles":[]},{"title":"键盘 API","level":"1.2.4","depth":2,"path":"API_keyboard.md","ref":"API_keyboard.md","articles":[]},{"title":"鼠标 API","level":"1.2.5","depth":2,"path":"API_mouse.md","ref":"API_mouse.md","articles":[]},{"title":"其他 API","level":"1.2.6","depth":2,"path":"API_others.md","ref":"API_others.md","articles":[]},{"title":"结果代码","level":"1.2.7","depth":2,"path":"API_result.md","ref":"API_result.md","articles":[]},{"title":"按键代码","level":"1.2.8","depth":2,"path":"API_keycode.md","ref":"API_keycode.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"website.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RX-78 说明书","language":"zh-hans","gitbook":"*"},"file":{"path":"API_control.md","mtime":"2019-03-30T13:30:12.045Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-30T13:55:25.609Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
