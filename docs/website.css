@@ -40,6 +40,13 @@ a>small:before {
   content:" [易] ";
 }
 
+.e {
+  font-size: 75% !important;
+}
+
+.e:before {
+  content:" [易] ";
+}
 
 section>*:not(h1):not(h2) {
   margin-left: 20pt;

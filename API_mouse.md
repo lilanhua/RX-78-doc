@@ -3,7 +3,7 @@
 ## RX78::Device::ConfigMouseMode<small>设备.配置鼠标模式</small>
 | 参数                    | 注释                                                         |
 | ----------------------- | ------------------------------------------------------------ |
-| mode<small>模式</small> | 可选值为：MouseMode::kRelative <small>#鼠标模式_相对</small>、MouseMode::kAbsolute<small>#鼠标模式_绝对</small>、MouseMode::kBoth <small>#鼠标模式_相对和绝对</small> |
+| mode<small>模式</small> | 可选值为：MouseMode::kRelative <span class="e">#鼠标模式_相对</span>、MouseMode::kAbsolute<span class="e">#鼠标模式_绝对</span>、MouseMode::kBoth <span class="e">#鼠标模式_相对和绝对</span> |
 
 不同的鼠标模式，移动时的行为如下表。
 
@@ -22,10 +22,11 @@
 
 ## RX78::Device::GetMouseMode设备.取坐标
 返回记录的鼠标坐标，根据调用的移动函数记录，若光标被外部程序移动，则返回的不是真正的光标位置。
+
 | 参数                    | 注释             |
 | ----------------------- | ---------------- |
-| x | x |
-| y | y |
+| x | x 坐标 |
+| y | y 坐标 |
 
 ## RX78::Device::LeftDown<small>RX78设备.左键按下</small>
 
