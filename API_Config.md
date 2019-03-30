@@ -26,6 +26,7 @@
 
 ## RX78::Device::ConfigMasterVendorID <small>RX78设备.配置控制端厂商ID</small>
 仅 2 头 和 3 头设备有效。
+
 | 参数                           | 注释       |
 | ------------------------------ | ---------- |
 | vendor_ID<small>厂商ID</small> | 新的ID。 |
