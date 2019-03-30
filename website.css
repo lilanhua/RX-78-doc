@@ -15,17 +15,19 @@ h3 {
   color: #666666;
 }
 
+th>small,
 td>small,
 h2>small {
   font-size: 75% !important;
-  font-weight: normal;
-  display: block;
-  color: #666666;
+  font-weight: normal !important;
+  display: block !important;
+  color: #666666 !important;
 }
 
+th>small:before,
 td>small:before,
 h2>small:before {
-  content:"[易] ";
+  content:"[?] ";
   font-weight: bold;
   color: #666666;
 }
@@ -35,7 +37,7 @@ a>small {
 }
 
 a>small:before {
-  content:" [易] ";
+  content:" [?] ";
 }
 
 
@@ -57,4 +59,9 @@ table>thead>tr>th:first-child {
 
 iframe {
   width: calc(100% - 20pt);
+}
+
+.page-inner
+{
+  max-width: 1000px;
 }
