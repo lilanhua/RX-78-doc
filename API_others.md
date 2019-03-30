@@ -3,7 +3,7 @@
 ## RX78::Device::GetDeviceType<small>RX78设备.取设备类型</small>
 | 参数 | 注释                                                         |
 | ---- | ------------------------------------------------------------ |
-| type | 可能的值为：DeviceType::k1<small>#设备类型_1头</small>、DeviceType::k2<small>#设备类型_2头</small>、DeviceType::k3<small>#设备类型_3头</small> |
+| type | 可能的值为：DeviceType::k1<span class="e">#设备类型_1头</span>、DeviceType::k2<span class="e">#设备类型_2头</span>、DeviceType::k3<span class="e">#设备类型_3头</span> |
 
 
 
