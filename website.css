@@ -27,7 +27,7 @@ h2>small {
 th>small:before,
 td>small:before,
 h2>small:before {
-  content:"[?] ";
+  content:"[易] ";
   font-weight: bold;
   color: #666666;
 }
@@ -37,7 +37,7 @@ a>small {
 }
 
 a>small:before {
-  content:" [?] ";
+  content:" [易] ";
 }
 
 
