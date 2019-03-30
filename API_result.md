@@ -8,6 +8,7 @@
 | RX78::Result::kInvalidResolutionValue<small>#RX78结果_无效分辨率</small> | 请确认设置的分辨率是否大于 0。                               |
 | RX78::Result::kTimeout<small>#RX78结果_超时</small>          | 请确定双头设备两端都已经正确插入，并确认超时值是否过小。     |
 | kInvalidTimeoutValuet<small>#RX78结果_无效超时值</small>     | 请确认设置的超时值是否大于 0。                               |
+| kCursorUnreset<small>#RX78结果_未重置光标</small>            | 需要先调用一次调用重置光标。                                 |
 | RX78::Result::kInvalidKeyValue<small>#RX78结果_无效键码</small> | 按键代码无效，关于键码请查看 [按键代码](API_keycode.md)。    |
 | RX78::Result::kKeyFull<small>#RX78结果_按键已满</small>      | 最多支持 6个普通按键 + 8个控制按键无冲突按键。               |
 | RX78::Result::kNotModified<small>#RX78结果_未修改</small>    | 若指定的鼠标按键或键盘按键已经按下，再要求设备按下时返回此值。 |

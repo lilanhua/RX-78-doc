@@ -4,11 +4,13 @@
 
 打开设备，其他操作都需要打开成功后才能进行。所需信息的查看方法请看 [设备信息的查看方法](QNA.md#如何查看设备名和设备-id)。
 
-| 参数                            | 注释                                                         |
-| ------------------------------- | ------------------------------------------------------------ |
-| device_ID<small>设备ID</small>  | 形如 XXXX-XXXX-XXXX，包括横杠，不包括方括号，字母全部为大写。 |
-| vendor_ID<small>厂商ID</small>  | 默认值为 0x1979，可自行配置。                                |
-| product_ID<small>产品ID</small> | 默认值为 0x0407，可自行配置。                                |
+| 参数                                           | 注释                                                         |
+| ---------------------------------------------- | ------------------------------------------------------------ |
+| device_ID<small>设备ID</small>                 | 形如 XXXX-XXXX-XXXX，包括横杠，不包括方括号，字母全部为大写。 |
+| target_resolution_x<small>目标屏幕宽度</small> | 默认值为当前屏幕宽度。                                       |
+| target_resolution_y<small>目标屏幕高度</small> | 默认值为当前屏幕高度。                                       |
+| device_type <small>产品ID</small>               | 兼容旧版本硬件，新版本不填。可选值为： DeviceType::k1 <small>设备类型_1头</small>（1 头）、DeviceType::k2 <small>设备类型_2头</small>（2 头）、DeviceType::k3 <small>设备类型_3头</small>（3 头）。 |
+| mouse_mode <small>产品ID</small>                | 兼容旧版本硬件，新版本不填。可选值为：MouseMode::kRelative <small>鼠标模式_相对</small>（3 头）、MouseMode::kBoth <small>鼠标模式_相对和绝对</small>（1 头、2 头）。 |
 
 ## RX78::Device::Close <small>RX78设备.关闭</small>
 对象销毁时会自动调用此方法关闭设备。
@@ -17,3 +19,15 @@
 可在配置设备ID、厂商ID、产品ID后重启设备，以刷新信息。
 
 成功后内部会调用 Close。
+
+## RX78::Device::RestartMouse <small>RX78设备.重启鼠标</small>
+只有 3 头设备有效。
+
+## RX78::Device::RestartKeyboard <small>RX78设备.重启键盘</small>
+只有 3 头设备有效。
+
+## RX78::Device::RestartMaster <small>RX78设备.重启控制端</small>
+只有 2 头或 3 头设备有效。
+
+## RX78::Device::RestartWorker <small>RX78设备.重启被控端</small>
+只有 2 头或 3 头设备有效。

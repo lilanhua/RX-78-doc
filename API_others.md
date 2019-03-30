@@ -1,12 +1,9 @@
 # 其他 API
 
-## RX78::Device::SetTargetResolution <small>RX78设备.设置目标机器分辨率</small>
-保存目标机器的分辨率到程序中，用于绝对坐标移动。
-
-| 参数 | 注释           |
-| ---- | -------------- |
-| x    | 水平方向分辨率 |
-| y    | 竖直方向分辨率 |
+## RX78::Device::GetDeviceType<small>RX78设备.取设备类型</small>
+| 参数 | 注释                                                         |
+| ---- | ------------------------------------------------------------ |
+| type | 可能的值为：DeviceType::k1<small>#设备类型_1头</small>、DeviceType::k2<small>#设备类型_2头</small>、DeviceType::k3<small>#设备类型_3头</small> |
 
 
 
