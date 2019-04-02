@@ -9,8 +9,8 @@
 | device_ID<span class="e">设备ID</span>         | 形如 XXXX-XXXX-XXXX，包括横杠，不包括方括号，字母全部为大写。 |
 | target_resolution_x<small>目标屏幕宽度</small> | 默认值为当前屏幕宽度。                                       |
 | target_resolution_y<small>目标屏幕高度</small> | 默认值为当前屏幕高度。                                       |
-| device_type <span class="e">设备类型</span>    | 兼容旧版本硬件，新版本不填。可选值为： DeviceType::k1 <span class="e">#设备类型_1头</span>（1 头）、DeviceType::k2 <span class="e">#设备类型_2头</span>（2 头）、DeviceType::k3 <span class="e">#设备类型_3头</span>（3 头）。 |
-| mouse_mode <span class="e">鼠标模式</span>     | 兼容旧版本硬件，新版本不填。可选值为：MouseMode::kRelative <span class="e">#鼠标模式_相对</span>（3 头）、MouseMode::kBoth <span class="e">#鼠标模式_相对和绝对</span>（1 头、2 头）。 |
+| device_type <small>设备类型</small>    | 兼容旧版本硬件，新版本不填。可选值为： DeviceType::k1 <span class="e">#设备类型_1头</span>（1 头）、DeviceType::k2 <span class="e">#设备类型_2头</span>（2 头）、DeviceType::k3 <span class="e">#设备类型_3头</span>（3 头）。 |
+| mouse_mode <small>鼠标模式</small>     | 兼容旧版本硬件，新版本不填。可选值为：MouseMode::kRelative <span class="e">#鼠标模式_相对</span>（3 头）、MouseMode::kBoth <span class="e">#鼠标模式_相对和绝对</span>（1 头、2 头）。 |
 
 ## RX78::Device::Close <small>RX78设备.关闭</small>
 对象销毁时会自动调用此方法关闭设备。
