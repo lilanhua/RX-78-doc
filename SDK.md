@@ -1,5 +1,11 @@
 # SDK
 
+# v2.1.6
+<a href="RX-78.2.1.6.zip" download="RX-78.2.1.6.zip" target="_blank">RX-78.2.1.6.zip</a>
+
+- C++ GetPos 参数由 uint16_t* 改为 uint16_t&（可防止空指针）
+- 增加 Python3.6 x86 接口
+
 # v2.1.5
 <a href="RX-78.2.1.5.zip" download="RX-78.2.1.5.zip" target="_blank">RX-78.2.1.5.zip</a>
 
