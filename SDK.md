@@ -1,6 +1,6 @@
 # SDK
 
-# v2.1.6
+# v2.2.0
 <a href="RX-78.2.2.0.zip" download="RX-78.2.2.0.zip" target="_blank">RX-78.2.2.0.zip</a>
 
 - C++ GetPos 参数由 uint16_t* 改为 uint16_t& （防止空指针）
