@@ -14,13 +14,13 @@
 | RX78::Device::MoveRel<small>RX78设备.相对移动</small> | 通过**到相对坐标**实现                             | 通过到绝对坐标实现                                | 通过**到相对坐标**实现                               |
 | RX78::Device::MoveAbs<small>RX78设备.绝对移动</small> | 通过**到相对坐标**实现                             | 通过到绝对坐标实现                                | 通过**到相对坐标**实现                               |
 
-## RX78::Device::GetMouseMode设备.取鼠标模式
+## RX78::Device::GetMouseMode<small>设备.取鼠标模式</small>
 
 | 参数                    | 注释             |
 | ----------------------- | ---------------- |
 | mode<small>模式</small> | 返回当前鼠标模式 |
 
-## RX78::Device::GetMouseMode设备.取坐标
+## RX78::Device::GetPos<small>设备.取坐标</small>
 返回记录的鼠标坐标，根据调用的移动函数记录，若光标被外部程序移动，则返回的不是真正的光标位置。
 
 | 参数                    | 注释             |
