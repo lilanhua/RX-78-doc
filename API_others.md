@@ -23,3 +23,6 @@
 | 参数  | 注释     |
 | ----- | -------- |
 | result<small>结果</small> | 结果    |
+
+## RX78::GetLibVersion <small>RX78取库版本</small>
+取当前使用的库的版本号

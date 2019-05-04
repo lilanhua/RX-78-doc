@@ -1,5 +1,16 @@
 # SDK
 
+# v2.3.0
+<a href="RX-78.2.3.0.zip" download="RX-78.2.3.0.zip" target="_blank">RX-78.2.3.0.zip</a>
+
+- 增加 COM 接口（可用于 TC、按键精灵、Delphi等）
+- 增加 C++ 静态库
+- 增加 GetLibVersion 函数
+- Python3.6 win32 接口改为静态链接（不需要 RX-78.dll）
+- 修正鼠标函数传递负值导致取出的当前坐标可能为负值
+- 修正中文打字没有按 NumLock 键导致输入错误
+- 修正键值常量拼写错误
+
 # v2.2.0
 <a href="RX-78.2.2.0.zip" download="RX-78.2.2.0.zip" target="_blank">RX-78.2.2.0.zip</a>
 
