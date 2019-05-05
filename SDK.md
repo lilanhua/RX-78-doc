@@ -1,6 +1,6 @@
 # SDK
 
-# v2.3.0
+# v2.3.1
 <a href="RX-78.2.3.1.zip" download="RX-78.2.3.1.zip" target="_blank">RX-78.2.3.1.zip</a>
 
 - 修复 TC 接口多次打开设备导致内存泄漏
