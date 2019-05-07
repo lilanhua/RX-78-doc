@@ -1,9 +1,10 @@
 # SDK
 
-# v2.3.2
-<a href="RX-78.2.3.2.zip" download="RX-78.2.3.2.zip" target="_blank">RX-78.2.3.2.zip</a>
+# v2.3.3
+<a href="RX-78.2.3.3.zip" download="RX-78.2.3.3.zip" target="_blank">RX-78.2.3.3.zip</a>
 
 - 静态库关闭全程序优化（/GL）以增强兼容性
+- 打开设备前先调用一次（防止句柄泄露）
 
 # v2.3.1
 <a href="RX-78.2.3.1.zip" download="RX-78.2.3.1.zip" target="_blank">RX-78.2.3.1.zip</a>
