@@ -1,5 +1,8 @@
 # 鼠标 API
 
+## RX78::Device::ResetCursor<small>设备.重置光标</small>
+将光标移动到屏幕左上角，同时将记录的当前坐标重置为 (0, 0)。不同鼠标模式下，一些鼠标移动命令需要先调用这个，见下面的表。
+
 ## RX78::Device::ConfigMouseMode<small>设备.配置鼠标模式</small>
 | 参数                    | 注释                                                         |
 | ----------------------- | ------------------------------------------------------------ |
@@ -9,10 +12,10 @@
 
 |                                                       | MouseMode::kRelative <small>#鼠标模式_相对</small> | MouseMode::kAbsolute<small>#鼠标模式_绝对</small> | MouseMode::kBoth <small>#鼠标模式_相对和绝对</small> |
 | ----------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------- |
-| RX78::Device::ToRel<small>RX78设备.到相对坐标</small> | 硬件实现                                           | 通过绝对移动实现                                  | 硬件实现                                             |
-| RX78::Device::ToAbs<small>RX78设备.到绝对坐标         | 通过**到相对坐标**实现                             | 硬件实现                                          | 硬件实现                                             |
-| RX78::Device::MoveRel<small>RX78设备.相对移动</small> | 通过**到相对坐标**实现                             | 通过到绝对坐标实现                                | 通过**到相对坐标**实现                               |
-| RX78::Device::MoveAbs<small>RX78设备.绝对移动</small> | 通过**到相对坐标**实现                             | 通过到绝对坐标实现                                | 通过**到相对坐标**实现                               |
+| RX78::Device::ToRel<small>RX78设备.到相对坐标</small> | 硬件实现 | 硬件到绝对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> | 硬件实现 |
+| RX78::Device::ToAbs<small>RX78设备.到绝对坐标         | 硬件到相对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> | 硬件实现 | 硬件实现 |
+| RX78::Device::MoveRel<small>RX78设备.相对移动</small> | 硬件到相对坐标实现 | 硬件到绝对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> | 硬件到相对坐标实现 |
+| RX78::Device::MoveAbs<small>RX78设备.绝对移动</small> | 硬件到相对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> | 硬件到绝对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> | 硬件到相对坐标+软件记录的当前坐标实现，需要先调用 RX78::Device::ResetCursor<small>设备.重置光标</small> |
 
 ## RX78::Device::GetMouseMode<small>设备.取鼠标模式</small>
 

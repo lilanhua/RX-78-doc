@@ -39,14 +39,27 @@
 <script>
   var const_name_cpp = document.getElementById("keycode-info-cpp");
   var const_name_e = document.getElementById("keycode-info-e");
+  function ConvertCode(code)
+  {
+    switch (code)
+    {
+      case 'MetaLeft':
+        return 'OSLeft';
+      case 'MetaRight':
+        return 'OSLeft';
+    }
+    return code;
+  }
   document.addEventListener('keydown', function(e) {
     e.preventDefault();
-    const_name_cpp.textContent = "k" + e.code;
-    const_name_e.textContent = "#Vk" + e.code;
+    var code = ConvertCode(e.code);
+    const_name_cpp.textContent = "k" + code;
+    const_name_e.textContent = "#Vk" + code;
   });
   document.addEventListener('keyup', function (e) {
-    const_name_cpp.textContent = "k" + e.code;
-    const_name_e.textContent = "#Vk" + e.code;
+    var code = ConvertCode(e.code);
+    const_name_cpp.textContent = "k" + code;
+    const_name_e.textContent = "#Vk" + code;
   });
 </script>
 
