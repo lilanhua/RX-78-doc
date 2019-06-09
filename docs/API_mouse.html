@@ -646,6 +646,63 @@
 </tr>
 </tbody>
 </table>
+<h2 id="rx78devicemoverelexrx78&#x8BBE;&#x5907;&#x76F8;&#x5BF9;&#x79FB;&#x52A8;ex">RX78::Device::MoveRelEx<small>RX78&#x8BBE;&#x5907;.&#x76F8;&#x5BF9;&#x79FB;&#x52A8;Ex</small></h2>
+<p>&#x4F7F;&#x7528;&#x6570;&#x5B66;&#x65B9;&#x7A0B;&#x6A21;&#x62DF;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x79FB;&#x52A8;&#x5230;&#x76F8;&#x5BF9;&#x5750;&#x6807;&#x3002;&#x4E0E; MoveRel &#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x6BCF;&#x4E00;&#x5C0F;&#x6B65;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x8C03;&#x7528; step_after_callback(step_after_callback_argv)&#x3002;</p>
+<p>&#x8F68;&#x8FF9;&#x8BA1;&#x7B97;&#x65B9;&#x7A0B;&#x4E3A; <code>a1 sin(b1 v) + a2 sin(b2 v)</code>&#xFF0C;v &#x8868;&#x793A;&#x5149;&#x6807;&#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x79FB;&#x52A8;&#x91CF;&#x3002;&#x901F;&#x5EA6;&#x7531;&#x4E09;&#x6B21;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>x &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>step_after_callback<small>&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;</small></td>
+<td>&#x6BCF;&#x79FB;&#x52A8;&#x4E00;&#x5C0F;&#x6B65;&#x540E;&#x4F1A;&#x8C03;&#x7528; &#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#xFF08;&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#xFF09;</td>
+</tr>
+<tr>
+<td>step_after_callback_argv<small>&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#x53C2;&#x6570;</small></td>
+<td></td>
+</tr>
+<tr>
+<td>sample_rate<small>&#x91C7;&#x6837;&#x6BD4;&#x4F8B;</small></td>
+<td>&#x6B64;&#x7CFB;&#x6570; * &#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x8DDD;&#x79BB; = &#x7528;&#x51E0;&#x4E2A;&#x70B9;&#x6A21;&#x62DF;&#x8F68;&#x8FF9;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0.2&#x3002;</td>
+</tr>
+<tr>
+<td>a1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 1, 2 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [1, 2)&#x3002;</td>
+</tr>
+<tr>
+<td>b1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.04 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.04)&#x3002;</td>
+</tr>
+<tr>
+<td>a2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.5, 1.5 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.5, 1.5)&#x3002;</td>
+</tr>
+<tr>
+<td>b2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.06 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.06)&#x3002;</td>
+</tr>
+<tr>
+<td>p1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+<tr>
+<td>p2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+</tbody>
+</table>
 <h2 id="rx78devicemoveabsrx78&#x8BBE;&#x5907;&#x7EDD;&#x5BF9;&#x79FB;&#x52A8;">RX78::Device::MoveAbs<small>RX78&#x8BBE;&#x5907;.&#x7EDD;&#x5BF9;&#x79FB;&#x52A8;</small></h2>
 <p>&#x4F7F;&#x7528;&#x6570;&#x5B66;&#x65B9;&#x7A0B;&#x6A21;&#x62DF;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x79FB;&#x52A8;&#x5230;&#x7EDD;&#x5BF9;&#x5750;&#x6807;&#x3002;</p>
 <p>&#x8F68;&#x8FF9;&#x8BA1;&#x7B97;&#x65B9;&#x7A0B;&#x4E3A; <code>a1 sin(b1 v) + a2 sin(b2 v)</code>&#xFF0C;v &#x8868;&#x793A;&#x5149;&#x6807;&#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x79FB;&#x52A8;&#x91CF;&#x3002;&#x901F;&#x5EA6;&#x7531;&#x4E09;&#x6B21;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</p>
@@ -672,6 +729,63 @@
 <tr>
 <td>sleep<small>&#x5EF6;&#x65F6;</small></td>
 <td>&#x6BCF;&#x4E2A;&#x6A21;&#x62DF;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 10&#x3002;</td>
+</tr>
+<tr>
+<td>a1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 1, 2 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [1, 2)&#x3002;</td>
+</tr>
+<tr>
+<td>b1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.04 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.04)&#x3002;</td>
+</tr>
+<tr>
+<td>a2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.5, 1.5 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.5, 1.5)&#x3002;</td>
+</tr>
+<tr>
+<td>b2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 0.06 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 0.06)&#x3002;</td>
+</tr>
+<tr>
+<td>p1</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+<tr>
+<td>p2</td>
+<td>&#x6B64;&#x503C;&#x4E3A;&#x968F;&#x673A;&#x8303;&#x56F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; { 0.001, 1 }&#xFF0C;&#x8868;&#x793A;&#x533A;&#x95F4; [0.001, 1)&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rx78devicemoveabsexrx78&#x8BBE;&#x5907;&#x7EDD;&#x5BF9;&#x79FB;&#x52A8;ex">RX78::Device::MoveAbsEx<small>RX78&#x8BBE;&#x5907;.&#x7EDD;&#x5BF9;&#x79FB;&#x52A8;Ex</small></h2>
+<p>&#x4F7F;&#x7528;&#x6570;&#x5B66;&#x65B9;&#x7A0B;&#x6A21;&#x62DF;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;&#x79FB;&#x52A8;&#x5230;&#x7EDD;&#x5BF9;&#x5750;&#x6807;&#x3002;&#x4E0E; MoveAbs &#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x6BCF;&#x4E00;&#x5C0F;&#x6B65;&#x5B8C;&#x6210;&#x540E;&#x4F1A;&#x8C03;&#x7528; step_after_callback(step_after_callback_argv)&#x3002;</p>
+<p>&#x8F68;&#x8FF9;&#x8BA1;&#x7B97;&#x65B9;&#x7A0B;&#x4E3A; <code>a1 sin(b1 v) + a2 sin(b2 v)</code>&#xFF0C;v &#x8868;&#x793A;&#x5149;&#x6807;&#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x79FB;&#x52A8;&#x91CF;&#x3002;&#x901F;&#x5EA6;&#x7531;&#x4E09;&#x6B21;&#x8D1D;&#x585E;&#x5C14;&#x66F2;&#x7EBF;&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;</th>
+<th>&#x6CE8;&#x91CA;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>x</td>
+<td>x &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>y</td>
+<td>y &#x8F74;&#x79FB;&#x52A8;&#x91CF;</td>
+</tr>
+<tr>
+<td>step_after_callback<small>&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;</small></td>
+<td>&#x6BCF;&#x79FB;&#x52A8;&#x4E00;&#x5C0F;&#x6B65;&#x540E;&#x4F1A;&#x8C03;&#x7528; &#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#xFF08;&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#x53C2;&#x6570;&#xFF09;</td>
+</tr>
+<tr>
+<td>step_after_callback_argv<small>&#x5355;&#x6B65;&#x540E;&#x56DE;&#x8C03;&#x53C2;&#x6570;</small></td>
+<td></td>
+</tr>
+<tr>
+<td>sample_rate<small>&#x91C7;&#x6837;&#x6BD4;&#x4F8B;</small></td>
+<td>&#x6B64;&#x7CFB;&#x6570; * &#x5230;&#x76EE;&#x6807;&#x7684;&#x76F4;&#x7EBF;&#x8DDD;&#x79BB; = &#x7528;&#x51E0;&#x4E2A;&#x70B9;&#x6A21;&#x62DF;&#x8F68;&#x8FF9;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 0.2&#x3002;</td>
 </tr>
 <tr>
 <td>a1</td>
@@ -786,7 +900,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"鼠标 API","level":"1.2.5","depth":2,"next":{"title":"其他 API","level":"1.2.6","depth":2,"path":"API_others.md","ref":"API_others.md","articles":[]},"previous":{"title":"键盘 API","level":"1.2.4","depth":2,"path":"API_keyboard.md","ref":"API_keyboard.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"website.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RX-78 说明书","language":"zh-hans","gitbook":"*"},"file":{"path":"API_mouse.md","mtime":"2019-06-04T12:12:30.539Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-04T12:29:58.397Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"鼠标 API","level":"1.2.5","depth":2,"next":{"title":"其他 API","level":"1.2.6","depth":2,"path":"API_others.md","ref":"API_others.md","articles":[]},"previous":{"title":"键盘 API","level":"1.2.4","depth":2,"path":"API_keyboard.md","ref":"API_keyboard.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-plus"],"styles":{"website":"website.css"},"pluginsConfig":{"search-plus":{},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"RX-78 说明书","language":"zh-hans","gitbook":"*"},"file":{"path":"API_mouse.md","mtime":"2019-06-09T00:16:54.410Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-09T00:18:52.159Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

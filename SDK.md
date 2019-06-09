@@ -1,5 +1,10 @@
 # SDK
 
+# v2.3.4
+<a href="RX-78.2.3.4.zip" download="RX-78.2.3.4.zip" target="_blank">RX-78.2.3.4.zip</a>
+
+- C++ 增加 MoveRelEx 和 MoveAbsEx，易语言增加相对移动Ex和绝对移动Ex
+
 # v2.3.3
 <a href="RX-78.2.3.3.zip" download="RX-78.2.3.3.zip" target="_blank">RX-78.2.3.3.zip</a>
 
