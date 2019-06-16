@@ -10,6 +10,6 @@
   * [其他 API](API_others.md)
   * [结果代码](API_result.md)
   * [按键代码](API_keycode.md)
-* [SDK](SDK.md)
+* [软件开发工具包](SDK.md)
 * [常见问题](QNA.md)
 * [版权声明](license.md)

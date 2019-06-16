@@ -1,4 +1,4 @@
-# SDK
+# 软件开发工具包
 
 # v2.3.4
 <a href="RX-78.2.3.4.zip" download="RX-78.2.3.4.zip" target="_blank">RX-78.2.3.4.zip</a>
