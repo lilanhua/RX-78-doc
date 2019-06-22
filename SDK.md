@@ -1,5 +1,10 @@
 # 软件开发工具包
 
+# v2.3.5
+<a href="RX-78.2.3.5.zip" download="RX-78.2.3.5.zip" target="_blank">RX-78.2.3.5.zip</a>
+
+- 修复轨迹移动一些情况下移动不自然
+
 # v2.3.4
 <a href="RX-78.2.3.4.zip" download="RX-78.2.3.4.zip" target="_blank">RX-78.2.3.4.zip</a>
 
