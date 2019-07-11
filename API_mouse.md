@@ -31,6 +31,22 @@
 | x | x 坐标 |
 | y | y 坐标 |
 
+## RX78::Device::SetPos<small>设备.置坐标</small>
+修改记录的鼠标坐标。即 DLL.x = x, DLL.y = y。
+
+| 参数                    | 注释             |
+| ----------------------- | ---------------- |
+| x | x 坐标 |
+| y | y 坐标 |
+
+## RX78::Device::FixPos<small>设备.修正坐标</small>
+修正记录的鼠标坐标。即 DLL.x = DLL.x + x, DLL.y = DLL.y + y。
+
+| 参数                    | 注释             |
+| ----------------------- | ---------------- |
+| x | x 坐标修正量 |
+| y | y 坐标修正量 |
+
 ## RX78::Device::LeftDown<small>RX78设备.左键按下</small>
 
 ## RX78::Device::LeftUp<small>RX78设备.左键弹起</small>

@@ -1,5 +1,10 @@
 # 软件开发工具包
 
+# v2.3.6
+<a href="RX-78.2.3.6.zip" download="RX-78.2.3.6.zip" target="_blank">RX-78.2.3.6.zip</a>
+
+- C++ 增加 `SetPos` 和 `FixPos`，易语言增加 `置坐标` 和 `修正坐标`
+
 # v2.3.5
 <a href="RX-78.2.3.5.zip" download="RX-78.2.3.5.zip" target="_blank">RX-78.2.3.5.zip</a>
 
