@@ -1,5 +1,10 @@
 # 软件开发工具包
 
+# v2.3.7
+<a href="RX-78.2.3.7.zip" download="RX-78.2.3.7.zip" target="_blank">RX-78.2.3.7.zip</a>
+
+- COM 接口 RX78Device::Scroll(unsigned short) => RX78Device::Scroll(short)
+
 # v2.3.6
 <a href="RX-78.2.3.6.zip" download="RX-78.2.3.6.zip" target="_blank">RX-78.2.3.6.zip</a>
 
