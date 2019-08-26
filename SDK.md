@@ -1,5 +1,12 @@
 # 软件开发工具包
 
+# v2.3.8
+<a href="RX-78.2.3.8.zip" download="RX-78.2.3.8.zip" target="_blank">RX-78.2.3.8.zip</a>
+
+- C++ 头文件兼容 VS2013
+- C++ 添加 demo.cpp
+
+
 # v2.3.7
 <a href="RX-78.2.3.7.zip" download="RX-78.2.3.7.zip" target="_blank">RX-78.2.3.7.zip</a>
 
