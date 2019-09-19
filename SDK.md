@@ -1,5 +1,11 @@
 # 软件开发工具包
 
+# v2.3.9
+<a href="RX-78.2.3.9.zip" download="RX-78.2.3.9.zip" target="_blank">RX-78.2.3.9.zip</a>
+
+- 增加 C API，命名为：RX78_ResultToStr，RX78_GetLibVersion，RX78_Device_xxx...
+- 易语言模块改用 C API
+
 # v2.3.8
 <a href="RX-78.2.3.8.zip" download="RX-78.2.3.8.zip" target="_blank">RX-78.2.3.8.zip</a>
 
